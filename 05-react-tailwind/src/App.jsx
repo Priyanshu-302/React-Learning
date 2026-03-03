@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./components/Card";
+import MainCard from "./components/MainCard";
 
 const App = () => {
   const usersData = [
@@ -190,7 +190,7 @@ const App = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-8">
         {usersData.map((user, idx) => {
           return (
-            <Card
+            <MainCard
               key={idx}
               bgImage={user.bgImage}
               profileImage={user.profileImage}
